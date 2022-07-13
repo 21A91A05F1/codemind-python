@@ -1,0 +1,13 @@
+n=int(input())
+l=2
+r=2
+while(l*2<=n):
+        l*=2
+while(r<=n):
+    r*=2
+if(n-l<r-n):
+    print(n-l)
+elif(n-l==r-n):
+    print(n-l,r-n)
+else:
+    print(r-n)
