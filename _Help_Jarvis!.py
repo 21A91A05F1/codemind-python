@@ -1,0 +1,23 @@
+t=int(input())
+while(t):
+    n=int(input())
+    if(n==0):
+        print("YES")
+    else:
+        k=[]
+        while(n):
+            k.append(n%10)
+            n//=10
+        c=0
+        k.sort()
+        for i in range(len(k)-1):
+            if(k[i+1]-k[i]==1):
+                c=1
+            else:
+                c=0
+                break
+        if(c==1):
+            print("YES")
+        else:
+            print("NO")
+    t-=1 
