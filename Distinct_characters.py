@@ -1,7 +1,10 @@
-k=list(map(str,input().lower().split()))
-p=[]
-k="".join(k)
-k=set(k)
-k=sorted(k)
-p="".join(k)
-print(p.replace(" ",""))
+s=input().lower()
+l=[]
+for i in s:
+    if s.count(i)==1 and i!=' ':
+        l.append(i)
+        l.sort()
+r=''
+for i in l:
+    r+=i
+print(r)
