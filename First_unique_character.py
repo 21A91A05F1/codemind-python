@@ -1,8 +1,16 @@
-n=input()
-n=list(n)
-for i in range(len(n)):
-    if(n.count(n[i])==1):
-        print(n[i])
+s=input()
+k=[]
+c=0
+for i in range(0,len(s)):
+    flag=0
+    for j in range(0,len(s)):
+        if(s[i]==s[j] and i!=j):
+            flag=1
+            break
+            
+    else:
+        c+=1
+        print(s[i])
         break
-else:
-    print(-1)
+if(c==0):
+    print("-1")
