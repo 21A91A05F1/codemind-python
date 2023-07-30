@@ -10,11 +10,11 @@ def ispali(s):
     else:
         return 0
 n=int(input())
-for i in range(1,100000):
+for i in range(1,10000):
     if(ispali(n+i)):
         m=n+i
         break
-for i in range(1,100000):
+for i in range(1,10000):
     if(ispali(n-i)):
         p=n-i
         break
